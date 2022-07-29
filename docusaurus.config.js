@@ -11,7 +11,7 @@ module.exports = {
   },
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'kr'],
+    locales: ['en', 'ko'],
   },
   plugins: [
     [
