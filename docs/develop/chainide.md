@@ -18,9 +18,15 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Introduction
 
-[ChainIDE](https://chainide.com/) is a chain agnostic, cloud-based IDE for creating decentralized applications. It enhances development cycle through pre-configured plugins that save users' time and effort. This is a beginner guide on creating and deploying a simple ERC-721 smart contract on the Polygon Mumbai Testnet. If you have any questions, feel free to ask them in the [ChainIDE Discord](https://discord.gg/QpGq4hjWrh).
+[ChainIDE](https://chainide.com/) is a chain agnostic, cloud-based IDE for creating decentralized applications. It enhances development cycle through pre-configured plugins that save users' time and effort. This is a beginner guide on creating and deploying a simple ERC-721 smart contract on the Polygon Mumbai Testnet. 
 
-## Pre-requisites
+:::tip
+
+If you have any questions, feel free to ask the ChainIDE team in [<ins>their Discord</ins>](https://discord.gg/QpGq4hjWrh).
+
+:::
+
+## Prerequisites
 
 1. ChainIDE
 2. MetaMask
@@ -30,7 +36,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 The following are general steps for deploying an ERC-721 smart contract:
 
-1.  Setting up a wallet
+1.  Set up a wallet
 2.  Write down an ERC-721 smart contract
 3.  Compile an ERC-721 Smart Contract
 4.  Deploy an ERC-721 Smart Contract
@@ -96,9 +102,9 @@ After creating the project, click on the "unconnected button" in the upper right
 
 ## Compile an ERC-721 Smart Contract
 
-After you have completed your smart contract, it is time to compile it. To compile, navigate to "compile the module", choose an appropriate compiler according to your source code, and press the "compile" button. An ABI and bytecode for the source code generate upon successful compilation. If there are some errors in your source code, they will display under the output panel in the "Logger module". You may need to carefully read the error, resolve it accordingly and compile the contract again.  
+After you have completed your smart contract, it is time to compile it. To compile, navigate to "compile the module", choose an appropriate compiler according to your source code, and press the "compile" button. An ABI and bytecode for the source code are generated upon successful compilation. If there are some errors in your source code, they will be displayed under the output panel in the "Logger module". You may need to carefully read the error, resolve it accordingly and compile the contract again.  
 
-::: note
+:::note
 
 Note down the compiler version and the license for your source code as it would be needed when you verify your smart contract on the Polygon Mumbai Testnet.
 
@@ -108,7 +114,7 @@ Note down the compiler version and the license for your source code as it would 
 
 ## Deploy an ERC-721 Smart Contract
 
-After successful compilation, it's time to deploy your compiled ERC-721 smart contract to the Polygon Mumbai test network. For that, you need to have a MetaMask installed, the Polygon Mumbai test network added to your wallet, and some testnet tokens to pay for the transaction fee.
+After successful compilation, it's time to deploy your compiled ERC-721 smart contract to the Polygon Mumbai test network. For that, you need to have MetaMask installed, the Polygon Mumbai test network added to your wallet, and some testnet tokens to pay for the transaction fee.
 
 Navigate to the "Deploy & Interaction" module and choose among the compiled smart contract. Select the smart contract you want to deploy and click the "deploy" button. For this tutorial, the `GameItem` smart contract will be deployed.
 
