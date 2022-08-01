@@ -68,21 +68,21 @@ Once Mumbai has been added to MetaMask, navigate to the [Polygon Faucet](https:/
 
 You need to write down all the required functions that you want to implement in your ERC-721 smart contract. A general ERC-721 smart contract has the following functions:
 
--   `balanceOf()`: return by_ The number of NFTs held by the owner
+-   `balanceOf()`: returns the number of NFTs held by the owner.
     
--   `ownerOf()`: returns the address of the token holder
+-   `ownerOf()`: returns the address of the token holder.
     
--   `approve():`grant address_ To has_ Token ID control. Approval event needs to be triggered after the method is successful
+-   `approve()`: approves the permission to transfer tokens on the owner’s behalf. Approval event needs to be triggered after the method is successful. 
     
--   `setApprovalForAll()`: Grant address_ The operator has the control of all NFTs, and the approvalforall event needs to be triggered after success
+-   `setApprovalForAll()`: Sets the approval of a given operator, and the approvalforall event needs to be triggered after success.
     
--   `getApproved()` : Get the approved address for a single NFT
+-   `getApproved()` : Get the approved address for a single NFT.
     
--   `isApprovedForAll()`: Query if an address is an authorized operator for another address
+-   `isApprovedForAll()`: Query if an address is an authorized operator for another address.
     
--   `safeTransferFrom()`: To transfer the ownership of an NFT, a successful transfer operation must initiate a transfer event
+-   `safeTransferFrom()`: To transfer the ownership of an NFT, a successful transfer operation must initiate a transfer event.
     
--   `transferFrom()`: Used to transfer NFTs. After the method succeeds, it needs to trigger the transfer event. The caller confirms himself_ To address can receive NFT normally, otherwise, this NFT will be lost. When this function is implemented, it needs to check whether it meets the judgment conditions
+-   `transferFrom()`: Used to transfer NFTs. After the method succeeds, it needs to trigger the transfer event. The caller confirms he can receive NFT normally, otherwise, this NFT will be lost. When this function is implemented, it needs to check whether it meets the judgment conditions.
 
 The ChainIDE team has prepared a complete ERC-721 template contract that includes all the required functions; you may use this built-in template and add/delete functions according to your requirements.
 
@@ -120,6 +120,8 @@ Navigate to the "Deploy & Interaction" module and choose among the compiled smar
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(2).png" width="100%" height="100%" />
 
+### Check functions from the deployed contract
+
 After successful deployment, an output message should state that your smart contract was deployed successfully. You can now verify the deployed contract. All the functions in the deployed smart contract can be seen in the "INTERACT" panel.
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(3).png" width="100%" height="100%" />
@@ -130,7 +132,7 @@ To verify a smart contract that imports other smart contracts, we need to create
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(7).png" width="100%" height="100%" />
 
-Once the Flatterner plug-in is activated, you'll be able to access it as a separate module as shown in the figure below. Choose the compiled file, and click on the flatten button to create a flattened file, once the flattened file is created, it will be automatically copied to the clipboard, you may paste it to a file and save it for later usage.
+Once the ner plug-in is activated, you'll be able to access it as a separate module as shown in the figure below. Choose the compiled file, and click on the flatten button to create a flattened file, once the flattened file is created, it will be automatically copied to the clipboard, you may paste it to a file and save it for later usage.
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(8).png" width="100%" height="100%" />
 
@@ -185,4 +187,4 @@ After successful minting, you can check the minted NFT on the OpenSea NFT market
 
 <img src="https://chainide-doc.s3.amazonaws.com/ERC+721+Deployment+on++Mumbai/image+(6).png" width="100%" height="100%" />
 
-Congratulations, you have successfully minted an NFT on Polygon using ChainIDE.
+**Congratulations, you have successfully minted an NFT on Polygon using ChainIDE.**
